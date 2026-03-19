@@ -1,10 +1,8 @@
-# =====================================
-# DRIVER MONITORING SYSTEM CONFIG
-# =====================================
+
 
 # Eye & Blink Detection
 EAR_THRESHOLD = 0.20
-MICROSLEEP_THRESHOLD = 2.0 # seconds
+MICROSLEEP_THRESHOLD = 2.0 
 BLINK_WARNING = 25
 BLINK_DANGER = 30
 
@@ -24,7 +22,7 @@ GAZE_WARNING_SEC = 2
 GAZE_SEVERE_SEC = 3
 
 # PERCLOS
-PERCLOS_WINDOW = 60  # seconds
+PERCLOS_WINDOW = 60  
 PERCLOS_WARNING = 40.0
 PERCLOS_SEVERE = 55.0
 
@@ -37,5 +35,5 @@ DB_NAME = "driver_monitoring.db"
 IMG_SIZE = 64
 MIN_SPEED = 5.0
 DEFAULT_SPEED = 40.0
-SUMMARY_WINDOW_SEC = 120  # 2 minutes
+SUMMARY_WINDOW_SEC = 120  
 FRAME_SLEEP = 0.01
