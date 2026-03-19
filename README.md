@@ -43,3 +43,45 @@ These are fused into:
 
 ## 🏗️ System Architecture
 
+Camera Input
+↓
+Face Detection (MediaPipe)
+↓
+Feature Extraction
+(EAR, Blink, PERCLOS, Head Pose, Gaze, Yawn)
+↓
+Fatigue Estimation (Bayesian + Smoothing)
+↓
+Attention Scoring
+↓
+Risk Engine
+↓
+Alert System + Dashboard + Database
+
+
+---
+
+## ⚙️ Tech Stack
+
+- Python
+- OpenCV
+- MediaPipe
+- Streamlit
+- NumPy, Pandas
+- SQLite
+- Pygame (alert system)
+
+---
+
+## 📊 Key Metrics
+
+| Metric | Description |
+|------|-------------|
+| EAR | Detects eye closure |
+| PERCLOS | Measures fatigue level |
+| Blink Rate | Indicates alertness |
+| Head Pose | Detects distraction |
+| Gaze Duration | Measures attention |
+| Yawn Frequency | Detects drowsiness |
+
+---
