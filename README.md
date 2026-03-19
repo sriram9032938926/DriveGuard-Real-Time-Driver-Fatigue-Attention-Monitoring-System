@@ -39,9 +39,10 @@ These are fused into:
 - 🧾 2-minute behavioral summary report  
 - 🗄️ SQLite database logging  
 
----
+
 
 ## 🏗️ System Architecture
+
 
 flowchart TD
 
@@ -50,7 +51,6 @@ B --> C[Capture Frame]
 C --> D{Face Detected?}
 
 D -- No --> C
-
 D -- Yes --> E[Extract Facial Landmarks]
 
 E --> F[Eye Detection (EAR)]
@@ -67,24 +67,23 @@ I --> L
 J --> L
 K --> L
 
-L --> M[Fatigue Estimation (Bayesian + Smoothing)]
+L --> M[Fatigue Estimation]
 M --> N[Attention Score Calculation]
-
 N --> O[Risk Engine]
 
 O --> P{Risk Level}
 
 P -->|Safe| Q[Continue Monitoring]
 P -->|Moderate| R[Display Warning]
-P -->|High| S[Trigger Alert (Delayed)]
-P -->|Critical| T[Trigger Alarm + Save Event]
+P -->|High| S[Trigger Alert]
+P -->|Critical| T[Trigger Alarm]
 
 Q --> C
 R --> C
 S --> C
 T --> C
 
-O --> U[Store Data in SQLite]
+O --> U[Store Data in Database]
 
 U --> V{2 Minutes Completed?}
 
@@ -92,10 +91,7 @@ V -- No --> C
 V -- Yes --> W[Generate Summary Report]
 
 W --> X[Display Dashboard Summary]
-
 X --> Y[End System]
-
----
 
 ## ⚙️ Tech Stack
 
