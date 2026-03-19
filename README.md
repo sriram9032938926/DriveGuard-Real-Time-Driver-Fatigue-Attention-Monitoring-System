@@ -42,56 +42,7 @@ These are fused into:
 
 ## 🏗️ System Architecture
 
-```mermaid
-flowchart TD
-
-A[Start System] --> B[Initialize Camera]
-B --> C[Capture Frame]
-C --> D{Face Detected?}
-
-D -- No --> C
-D -- Yes --> E[Extract Facial Landmarks]
-
-E --> F[Eye Detection (EAR)]
-E --> G[Blink Detection]
-E --> H[PERCLOS Calculation]
-E --> I[Head Pose (Pitch, Yaw)]
-E --> J[Gaze Tracking]
-E --> K[Yawn Detection]
-
-F --> L[Feature Fusion]
-G --> L
-H --> L
-I --> L
-J --> L
-K --> L
-
-L --> M[Fatigue Estimation]
-M --> N[Attention Score Calculation]
-N --> O[Risk Engine]
-
-O --> P{Risk Level}
-
-P -->|Safe| Q[Continue Monitoring]
-P -->|Moderate| R[Display Warning]
-P -->|High| S[Trigger Alert]
-P -->|Critical| T[Trigger Alarm]
-
-Q --> C
-R --> C
-S --> C
-T --> C
-
-O --> U[Store Data in Database]
-
-U --> V{2 Minutes Completed?}
-
-V -- No --> C
-V -- Yes --> W[Generate Summary Report]
-
-W --> X[Display Dashboard Summary]
-X --> Y[End System]
-
+<img width="1429" height="1904" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/8bab53f9-1ae9-4e21-845b-fb69ee173c08" />
 
 ## ⚙️ Tech Stack
 
