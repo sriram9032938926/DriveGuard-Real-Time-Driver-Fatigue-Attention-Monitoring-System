@@ -40,10 +40,9 @@ These are fused into:
 - 🗄️ SQLite database logging  
 
 
-
 ## 🏗️ System Architecture
 
-
+```mermaid
 flowchart TD
 
 A[Start System] --> B[Initialize Camera]
@@ -92,7 +91,6 @@ V -- Yes --> W[Generate Summary Report]
 
 W --> X[Display Dashboard Summary]
 X --> Y[End System]
-
 ## ⚙️ Tech Stack
 
 - Python
