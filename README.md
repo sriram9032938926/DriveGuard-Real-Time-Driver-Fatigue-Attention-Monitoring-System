@@ -42,7 +42,7 @@ These are fused into:
 
 ## 🏗️ System Architecture
 
-<img width="1429" height="1904" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/8bab53f9-1ae9-4e21-845b-fb69ee173c08" />
+<img width="500" height="700" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/8bab53f9-1ae9-4e21-845b-fb69ee173c08" />
 
 ## ⚙️ Tech Stack
 
